@@ -1,18 +1,38 @@
-# Criando um Banco Digital com Java e Orientação a Objetos
+# Construindo uma API Rest de consulta de cidades do Brasil do zero até a produção
 
-## 02/08/2021 - [Mentoria #1: Tire Suas Dúvidas Sobre Orientação a Objetos](https://www.youtube.com/watch?v=YS6ouOhkyNI)
+## Digital Innovation One
+### Bootcamps "Amdocs JAVA Developer" e "Cognizant Java Developer"
 
-Desafio: Considerando nosso conhecimento no domínio bancário, iremos abstrair uma solução Orientada a Objetos em Java. Para isso, vamos interpretar o seguinte cenário:
-“Um banco oferece aos seus clientes dois tipos de contas (corrente e poupança), as quais possuem as funcionalidades de depósito, saque e transferência (entre contas da própria instituição).”
+Projeto desenvolvido com instruções de [Venilton FalvoJr](https://github.com/falvojr) na trilha de estudo dos Bootcamps "Amdocs JAVA Developer" e "Cognizant Java Developer" da [dio.me](https://dio.me/).
 
-### Abstração
-Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais. Nesse contexto, objetos são abstrações de entidades existentes no domínio em questão.
+<p align="center">
+	<img alt="Repository language count" src="https://img.shields.io/github/languages/count/didifive/lab-banco-digital-oo">
+<a href="https://www.linkedin.com/in/falvojr/">
+		<img alt="Made by Didi" src="https://img.shields.io/badge/made%20by-FalvoJr-blue">
+	</a>	
+<a href="https://www.linkedin.com/in/luis-carlos-zancanela/">
+		<img alt="Update by Didi" src="https://img.shields.io/badge/update%20by-Didi-green">
+	</a>
+	<a href="https://github.com/didifive/lab-banco-digital-oo/commits/master">
+		<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/didifive/lab-banco-digital-oo?color=blue">
+	</a>
+	<img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
+</p>
 
-### Encapsulamento
-Encapsular significa esconder a implementação dos objetos, criando assim interfaces de uso mais concisas e fáceis de usar/entender. O encapsulamento favorece principalmente dois aspectos de um sistema: a manutenção e a evolução.
+<p align="center">
+	<a href="https://dev.java/">
+	  <img alt="Java" src="https://img.shields.io/static/v1?color=red&label=Dev&message=Java&style=for-the-badge&logo=Java">
+	</a>
+</p>
 
-### Herança
-Permite que você defina uma classe filha que reutiliza (herda), estende ou modifica o comportamento de uma classe pai. A classe cujos membros são herdados é chamada de classe base. A classe que herda os membros da classe base é chamada de classe derivada.
+Link da base utilizada neste projeto: [falvojr/lab-banco-digital-oo](https://github.com/falvojr/lab-banco-digital-oo)
 
-### Polimorfismo
-Capacidade de um objeto poder ser referenciado de várias formas, ou seja, é capacidade de tratar objetos criados a partir das classes específicas como objetos de uma classe genérica. Cuidado, polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referimos a ele.
+Abaixo seguem modificações feitas em relação ao projeto base:
+* Foi criada a classe `Agencia` visto que um banco pode ter mais de uma agência;
+* Foi criado método para permitir trocar o vínculo da agência das contas;
+* A classe `Cliente` original foi modificada para abstrata para ser extendida em `ClientePessoaFisica` e `ClientePessoaJuridica`;
+* Mudanças na classe `Main` para adaptar as mudanças realizadas.
+
+Versões utilizadas no desenvolvimento:
+* Java 17;
+* IntelliJ IDEA Community Edition 2021.2.
